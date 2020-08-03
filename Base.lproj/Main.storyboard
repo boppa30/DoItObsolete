@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Do It" id="ZMu-Yd-VEc">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="dBD-MC-jI5"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="EEF-58-8Mw"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Umn-qb-WiQ">
                             <connections>
                                 <action selector="plusTapped:" destination="BYZ-38-t0r" id="suY-cz-Gtl"/>
@@ -72,12 +72,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ncl-3e-tel">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ncl-3e-tel" userLabel="Important Switch">
                                 <rect key="frame" x="182.5" y="224" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a83-5k-KwV">
                                 <rect key="frame" x="192" y="285" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="uTW-yY-qj4" eventType="touchUpInside" id="cJm-bb-YZQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1eW-Ry-4m8"/>
